@@ -36,3 +36,7 @@ Then;
 <pre>
 sudo service mysql stop
 </pre>
+
+So, you should restart the lampp:
+
+<pre>sudo /opt/lampp/lampp restart</pre>
