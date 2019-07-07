@@ -45,10 +45,10 @@ Temporarily switch to a different commit
 If you want to temporarily go back to it, fool around, then come back to where you are, all you have to do is check out the desired commit:
 
 # This will detach your HEAD, that is, leave you with no branch checked out:
-git checkout 0d1d7fc32
+<pre>git checkout 0d1d7fc32 </pre>
 Or if you want to make commits while you're there, go ahead and make a new branch while you're at it:
 
-git checkout -b old-state 0d1d7fc32
+<pre>git checkout -b old-state 0d1d7fc32</pre>
 To go back to where you were, just check out the branch you were on again. (If you've made changes, as always when switching branches, you'll have to deal with them as appropriate. You could reset to throw them away; you could stash, checkout, stash pop to take them with you; you could commit them to a branch there if you want a branch there.)
 
 Hard delete unpublished commits
@@ -56,8 +56,9 @@ If, on the other hand, you want to really get rid of everything you've done sinc
 
 # This will destroy any local modifications.
 # Don't do it if you have uncommitted work you want to keep.
-git reset --hard 0d1d7fc32
+<pre>git reset --hard 0d1d7fc32</pre>
 
+<pre>
 # Alternatively, if there's work to keep:
 git stash
 git reset --hard 0d1d7fc32
@@ -65,3 +66,4 @@ git stash pop
 # This saves the modifications, then reapplies that patch after resetting.
 # You could get merge conflicts, if you've modified things which were
 # changed since the commit you reset to.
+</pre>
