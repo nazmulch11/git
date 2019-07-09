@@ -67,3 +67,7 @@ git stash pop
 # You could get merge conflicts, if you've modified things which were
 # changed since the commit you reset to.
 </pre>
+
+#You can use git cherry-pick to apply a single commit by itself to your current branch.
+
+Example:<pre> git cherry-pick d42c389f</pre>
