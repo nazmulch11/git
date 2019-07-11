@@ -71,3 +71,7 @@ git stash pop
 #You can use git cherry-pick to apply a single commit by itself to your current branch.
 
 Example:<pre> git cherry-pick d42c389f</pre>
+
+#To hard reset a single file to HEAD:
+
+<pre>git checkout @ -- myfile.ext</pre>
