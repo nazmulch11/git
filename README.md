@@ -75,3 +75,19 @@ Example:<pre> git cherry-pick d42c389f</pre>
 # To hard reset a single file to HEAD:
 
 <pre>git checkout @ -- myfile.ext</pre>
+
+# Rename a local and remote branch in git
+
+1. Rename your local branch.
+If you are on the branch you want to rename:
+<pre>git branch -m new-name</pre>
+
+If you are on a different branch:
+<pre>git branch -m old-name new-name</pre>
+2. Delete the old-name remote branch and push the new-name local branch.
+
+<pre>git push origin :old-name new-name</pre>
+3. Reset the upstream branch for the new-name local branch.
+Switch to the branch and then:
+
+<pre>git push origin -u new-name</pre>
