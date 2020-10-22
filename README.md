@@ -91,3 +91,12 @@ If you are on a different branch:
 Switch to the branch and then:
 
 <pre>git push origin -u new-name</pre>
+
+You can request a list of all remote repositories that are currently connected to your local repository:
+
+$ git remote -v
+  origin  https://test@github.com/test/example.git (fetch)
+  origin  https://test@github.com/test/example.git (push)
+Use the "add" parameter if you want to connect a new remote repository, in this example named "production":
+
+$ git remote add production https://test@github.com/test/example.git
