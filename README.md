@@ -1,6 +1,10 @@
 # git
 <h2>collection of useful git command</h2>
 
+<pre>
+git config --global user.name "Nazmul Hosen"
+git config --global user.email "nazmul.ch11@gmail.com"
+</pre>
 <h2>Revert the full commit</h2>
 Sometimes you may want to undo a whole commit with all changes. Instead of going through all the changes manually, you can simply tell git to revert a commit, which does not even have to be the last one. Reverting a commit means to create a new commit that undoes all changes that were made in the bad commit. Just like above, the bad commit remains there, but it no longer affects the the current master and any future commits on top of it.<br>
 
