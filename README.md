@@ -1,13 +1,17 @@
 # git
 <h2>collection of useful git command</h2>
 
+<h3>To Change username and user email of local git use below command</h3>
 <pre>
 git config --global user.name "Nazmul Hosen"
 git config --global user.email "nazmul.ch11@gmail.com"
 </pre>
+
+<h3>Connect to a remote repository	If you haven't connected your local repository to a remote server, add the server to be able to push to it:	git remote add origin <server></h3>
+  <h4>If you haven't connected your local repository to a remote server, add the server to be able to push to it:</h4>
+  <pre>git remote add origin <server></pre>
 <h2>Revert the full commit</h2>
 Sometimes you may want to undo a whole commit with all changes. Instead of going through all the changes manually, you can simply tell git to revert a commit, which does not even have to be the last one. Reverting a commit means to create a new commit that undoes all changes that were made in the bad commit. Just like above, the bad commit remains there, but it no longer affects the the current master and any future commits on top of it.<br>
-
 
 <pre>git revert {commit_id}'</pre>
 
