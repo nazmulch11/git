@@ -110,3 +110,9 @@ $ git remote -v
 <pre>
 $ git remote add production https://test@github.com/test/example.git
 </pre>
+
+<b>.gitignore only applies to untracked files. If you are tracking a .pyc then .gitignore won't apply. Remove the .pyc with git rm and next time you do a git status it (and any others) won't show up in the list of untracked file and nor will it be automatically added.
+
+Otherwise if you need to ignore a file already under version control, update the index to ignore changes to files already under version control:</b>
+
+<pre>git update-index --assume-unchanged <files></pre>
