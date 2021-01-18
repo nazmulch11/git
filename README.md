@@ -116,3 +116,9 @@ $ git remote add production https://test@github.com/test/example.git
 Otherwise if you need to ignore a file already under version control, update the index to ignore changes to files already under version control:</b>
 
 <pre>git update-index --assume-unchanged <files></pre>
+
+// delete branch locally
+<pre>git branch -d localBranchName</pre>
+
+// delete branch remotely
+<pre>git push origin --delete remoteBranchName</pre>
