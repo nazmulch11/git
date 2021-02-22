@@ -1,0 +1,12 @@
+<h2>Gitignore work</h2>
+
+To untrack every file that is now in your .gitignore:
+
+First commit any outstanding code changes, and then, run this command:
+<pre>git rm -r --cached .</pre>
+
+This removes any changed files from the index(staging area), then just run:
+<pre>git add .</pre>
+
+Commit it:
+<pre>git commit -m ".gitignore is now working"</pre>
