@@ -124,7 +124,8 @@ Otherwise if you need to ignore a file already under version control, update the
 <pre>git push origin --delete remoteBranchName</pre>
 
 <h2 id="1-to-remove-a-commit-done-locally">1. To remove a commit done locally:</h2>
-
+<p>You made a commit and then realized you want to remove it. But, you still want to keep your changes.
+This is achieved by:</p>
 <pre>git reset --soft HEAD^</pre>
 
 
